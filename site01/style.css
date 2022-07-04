@@ -46,6 +46,7 @@ main{
     height: 2px;
     background: white;
     margin: 8px;
+    transition: 0.3s
 
 }
 @media (max-width: 999px){
@@ -86,4 +87,13 @@ main{
         opacity: 1;
         transform: translateX(0);
     }
+}
+.menu.active .linha1{
+    transform: rotate(-45deg) translate(-8px, 8px)
+}
+.menu.active .linha2{
+    opacity: 0;
+}
+.menu.active .linha3{
+    transform: rotate(45deg) translate(-5px, -7px)
 }
